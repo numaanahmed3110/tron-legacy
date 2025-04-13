@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="relative w-full h-screen overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-75"
-          src="https://res.cloudinary.com/dvswtlrob/video/upload/v1744479960/final_ljlxud_k8ff8i.mp4"
+          src="https://res.cloudinary.com/dvswtlrob/video/upload/v1744531324/tron-2160p-finale_vijdo2.mp4"
           autoPlay
           preload="auto"
           loop
