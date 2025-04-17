@@ -47,7 +47,15 @@ const Navbar = () => {
       if (section) observer.observe(section);
     });
 
-    return () => observer.disconnect();
+    const handleScroll = () => {
+      setScrolling(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
