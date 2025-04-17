@@ -2,11 +2,11 @@ import logo from "../assets/TRON.svg";
 
 const Hero = () => {
   return (
-    <div>
+    <div id="hero">
       <div className="relative w-full h-screen overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-75"
-          src="https://res.cloudinary.com/dvswtlrob/video/upload/v1744531324/tron-2160p-finale_vijdo2.mp4"
+          src="https://res.cloudinary.com/duzidxl2j/video/upload/v1744234212/TronLegacyVid_compressed_wmy0ow.mp4"
           autoPlay
           preload="auto"
           loop
@@ -30,9 +30,12 @@ const Hero = () => {
         <a
           href="https://www.hotstar.com/in/movies/tron-legacy/1260018669"
           target="_blank"
+          aria-label="Disney+ Link"
           rel="noopener noreferrer"
-          className="inline-block text-center w-[900px] text-[#73cbe8] border-2 rounded-3xl pt-2 pb-2
-          transition duration-100 hover:border-[white] hover:text-[white] hover:cursor-pointer text-sm"
+          className="flex items-center justify-center w-10/11 text-[var(--prim)] border border-[var(--white-icon-tr)]
+          gap-2 mt-9 rounded-full p-3
+          transition duration-300 ease-in-out hover:border-[var(--white)] 
+          hover:text-[var(--white)] hover:cursor-pointer text-sm"
         >
           Watch the movie on Disney+
         </a>

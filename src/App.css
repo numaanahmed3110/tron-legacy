@@ -1,3 +1,58 @@
 :root {
-  --color-background: #02151b;
+  --background: #01151a;
+  --prim: #6dcff5;
+  --white: #dfdfdf;
+  --white-icon: #f3f3f398;
+}
+
+* {
+  font-family: "kanit", -apple-system, system-ui, sans-serif;
+}
+
+*::selection {
+  background-color: var(--prim);
+  color: var(--background);
+}
+
+/* Chrome, Safari y Opera */
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.scrollable {
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+.img-prim {
+  /* Filter for #6dcff5 */
+  filter: invert(83%) sepia(19%) saturate(1117%) hue-rotate(171deg)
+    brightness(96%) contrast(97%);
+}
+
+.img-white {
+  /* Filter for #dfdfdf */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(94deg) brightness(85%)
+    contrast(88%);
 }
